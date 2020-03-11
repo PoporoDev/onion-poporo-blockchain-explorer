@@ -1908,7 +1908,7 @@ show_my_outputs(string tx_hash_str,
 
     if (xmr_address_str.empty())
     {
-        return string("Monero address not provided!");
+        return string("Poporo address not provided!");
     }
 
     if (viewkey_str.empty())
@@ -5240,7 +5240,7 @@ json_outputs(string tx_hash_str,
     if (address_str.empty())
     {
         j_response["status"]  = "error";
-        j_response["message"] = "Monero address not provided";
+        j_response["message"] = "Poporo address not provided";
         return j_response;
     }
 
@@ -5271,13 +5271,13 @@ json_outputs(string tx_hash_str,
         return j_response;
     }
 
-    // parse string representing given monero address
+    // parse string representing given poporo address
     address_parse_info address_info;
 
     if (!xmreg::parse_str_address(address_str,  address_info, nettype))
     {
         j_response["status"]  = "error";
-        j_response["message"] = "Cant parse monero address: " + address_str;
+        j_response["message"] = "Cant parse poporo address: " + address_str;
         return j_response;
 
     }
@@ -5465,7 +5465,7 @@ json_outputsblocks(string _limit,
     if (address_str.empty())
     {
         j_response["status"]  = "error";
-        j_response["message"] = "Monero address not provided";
+        j_response["message"] = "Poporo address not provided";
         return j_response;
     }
 
@@ -5476,13 +5476,13 @@ json_outputsblocks(string _limit,
         return j_response;
     }
 
-    // parse string representing given monero address
+    // parse string representing given poporo address
     address_parse_info address_info;
 
     if (!xmreg::parse_str_address(address_str, address_info, nettype))
     {
         j_response["status"]  = "error";
-        j_response["message"] = "Cant parse monero address: " + address_str;
+        j_response["message"] = "Cant parse poopro address: " + address_str;
         return j_response;
 
     }
@@ -5631,7 +5631,7 @@ json_networkinfo()
     if (!get_monero_network_info(j_info))
     {
         j_response["status"]  = "error";
-        j_response["message"] = "Cant get monero network info";
+        j_response["message"] = "Cant get poporo network info";
         return j_response;
     }
 
