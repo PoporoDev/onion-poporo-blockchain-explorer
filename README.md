@@ -97,20 +97,20 @@ Note: `devel` branch of the explorer follows `master` branch of the monero!
 ## Compilation on Ubuntu 16.04/18.04
 
 
-#### Monero download and compilation
+#### Poporo download and compilation
 
-To download and compile recent Monero follow instructions
+To download and compile recent Poporo follow instructions
 in the following link:
 
 https://github.com/moneroexamples/monero-compilation/blob/master/README.md
 
 ##### Compile and run the explorer
 
-Once the Monero compiles, the explorer can be downloaded and compiled
+Once the Poporo compiles, the explorer can be downloaded and compiled
 as follows:
 
 ```bash
-# go to home folder if still in ~/monero
+# go to home folder if still in ~/poporo
 cd ~
 
 # download the source code 
